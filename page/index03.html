@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+    <style>
+        * {
+    font-family: "Catamaran", sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: #f8f8f8;
+
+}
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    background: #ebe1fa;
+    color: #920cc8;
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin-left: -7px;
+    animation: animate 1s linear infinite;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) scaleX(1);
+        box-shadow: 0 0 0 #2d2f5a;
+
+    }
+    50%{
+        transform: translateY(-70px) scaleX(.7);
+        box-shadow: 0 30px 15px #2d2f5a;
+    }
+    100%{
+        transform: translateY(0) scaleX(1);
+        box-shadow: 0 0 0 #2d2f5a;
+    }
+}
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li style="--i:1">W</li>
+        <li style="--i:1">E</li>
+        <li style="--i:1">L</li>
+        <li style="--i:1">C</li>
+        <li style="--i:1">0</li>
+        <li style="--i:1">M</li>
+        <li style="--i:1">E</li>
+    </ul>
+</body>
+</html>
